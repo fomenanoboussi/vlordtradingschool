@@ -1,0 +1,3072 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Sécurité & bonnes pratiques -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+
+  <!-- Responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Vlord Trading School | Formation Trading Structurée & Coaching </title>
+  <meta name="description" content="Vlord Trading School est une académie de trading moderne proposant formations, coaching et accompagnement pour traders débutants et intermédiaires.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vlord trading school.site/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vlord Trading School – Formation Trading & Coaching">
+  <meta property="og:description" content="Apprenez le trading avec une méthode claire, structurée et un accompagnement réel.">
+  <meta property="og:image" content="https://vlord trading school.site/preview.jpg">
+  <meta property="og:url" content="https://vlord trading school.ste/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  >
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="services-cards.css">
+
+
+
+  <style>
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif; }
+    body { overflow-x: hidden; }
+
+    /* NAVBAR FIXE */
+    .navbar {
+      width: 100%;
+      padding: 20px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top:0;
+      left:0;
+      z-index: 1000;
+      background: rgba(4, 0, 43, 0.85); /* semi-transparent */
+      backdrop-filter: blur(10px);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap:10px;
+      font-weight: bold;
+      color: white;
+      font-size: 1.2rem;
+    }
+    .logo span { font-weight: 700; }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .nav-links a:hover { color: #f9d342; }
+
+    .nav-cta {
+      padding: 10px 25px;
+      background-color: #201e8b; 
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+    .btn-nav:hover { background-color: #4c2da3; }
+
+    /* HERO SECTION */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 0 50px;
+      background: linear-gradient(135deg, #5a0a2e, #2b0016);
+      color: white;
+      margin-top: 80px; /* navbar height */
+      overflow: hidden;
+    }
+
+    .hero-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      gap: 50px;
+    }
+
+    /* Texte et boutons */
+    .hero-text {
+      flex: 1;
+      max-width: 600px;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeUp 1s forwards 0.3s;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      line-height: 1.6;
+      color: #f1f1f1;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 20px;
+    
+    }
+
+    .hero-buttons .btn-yellow {
+      padding: 15px 30px;
+      background-color: #42f994;
+      color: #2b0016;
+      border: none;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+    .hero-buttons .btn-yellow:hover { background-color: #e6c530; }
+
+    .hero-buttons .btn-white {
+      padding: 15px 30px;
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+    .hero-buttons .btn-white:hover { background: rgba(255,255,255,0.1); }
+
+    /* Mockup flottant */
+    .hero-mockup {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transform: translateY(-30px);
+      animation: floatUp 1s forwards 0.6s;
+    }
+
+    .hero-mockup img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 30px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    /* Animations */
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes floatUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .hero-content { flex-direction: column-reverse; gap: 40px; }
+      .hero-text h1 { font-size: 2.5rem; text-align: center; }
+      .hero-text p { text-align: center; }
+      .hero-buttons { justify-content: center; }
+    }
+
+    @media (max-width: 600px) {
+      .nav-links { display: none; }
+      .btn-nav { display: none; }
+    }
+
+    .hero-mockup img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none; /* plus aucune ombre */
+  animation: float 3s ease-in-out infinite;
+}
+
+/* SECTION GLOBAL */
+.pain-section {
+  padding: 100px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+/* CARTES STATS */
+.stats-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  width: 260px;
+  padding: 30px 20px;
+  border-radius: 20px;
+  color: white;
+}
+
+.stat-card h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.stat-card p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.stat-bordeaux {
+  background: #147a5b;
+}
+
+.stat-yellow {
+  background: #f2b705;
+}
+
+.stat-blue {
+  background: #5f738a;
+}
+
+/* TITRE */
+.pain-title {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111;
+}
+
+/* POINTS NEGATIFS */
+.pain-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 colonnes fixes */
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  text-align: left;
+}
+
+
+
+.pain-columns ul {
+  list-style: none;
+   text-align: left;
+}
+
+.pain-columns li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ICONE X */
+.x-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffd6dc;
+  color: #2d00d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* TEXTE */
+.pain-text {
+  max-width: 750px;
+  margin: 0 auto 50px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* BOUTON CTA */
+.pain-cta {
+  display: inline-block;
+  padding: 18px 40px;
+  background: #f2b705;
+  color: #111;
+  font-weight: 700;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.pain-cta:hover {
+  background: #ddb000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .pain-columns {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* ANIMATIONS DE BASE */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.fade-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: fadeLeft 0.8s ease forwards;
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: fadeRight 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.stat-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+.pain-columns li {
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.pain-columns li:nth-child(1) { animation-delay: 0.2s; }
+.pain-columns li:nth-child(2) { animation-delay: 0.4s; }
+.pain-columns li:nth-child(3) { animation-delay: 0.6s; }
+
+/* ============================= */
+/*        RESPONSIVE GLOBAL      */
+/* ============================= */
+
+/* Sécurité globale */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============================= */
+/* TABLETTE (<= 1024px)          */
+/* ============================= */
+@media (max-width: 1024px) {
+
+  /* NAVBAR */
+  .navbar {
+    padding: 16px 25px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  /* HERO */
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* CARTES STATS */
+  .stats-cards {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  /* POINTS NÉGATIFS */
+  .pain-columns {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+/* ============================= */
+/* MOBILE (<= 768px)             */
+/* ============================= */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .nav-links {
+    display: none;
+  }
+
+  .btn-nav {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  /* HERO ARRONDIE */
+  .hero-wrapper {
+    padding: 90px 10px 30px;
+  }
+
+  .hero {
+    border-radius: 20px;
+    padding: 40px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  /* STATS */
+  .stats-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* TEXTE */
+  .pain-title {
+    font-size: 1.4rem;
+  }
+
+  /* CTA */
+  .pain-cta {
+    width: 100%;
+    padding: 18px;
+    font-size: 1rem;
+  }
+}
+
+/* ============================= */
+/* PETITS MOBILES (<= 480px)     */
+/* ============================= */
+@media (max-width: 480px) {
+
+  .hero-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .pain-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* ============================= */
+/*      MENU HAMBURGER MOBILE    */
+/* ============================= */
+
+/* Bouton hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: white;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+/* Menu mobile */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #120a5a, #00032b);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  transition: 0.5s ease;
+  z-index: 1000;
+}
+
+.mobile-menu a {
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* CTA mobile */
+.mobile-cta {
+  margin-top: 20px;
+  padding: 15px 35px;
+  background: #0544f2;
+  color: #111;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+/* État ouvert */
+.mobile-menu.active {
+  right: 0;
+}
+
+/* Animation hamburger -> croix */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links,
+  .btn-nav {
+    display: none;
+  }
+}
+
+/* ============================= */
+/* MOCKUP SOUS LE TEXTE (MOBILE) */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .hero-content {
+    flex-direction: column; /* TEXTE PUIS MOCKUP */
+  }
+
+  .hero-text {
+    order: 1;
+    text-align: center;
+  }
+
+  .hero-mockup {
+    order: 2;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .hero-mockup img {
+    max-width: 280px; /* taille idéale mobile */
+  }
+}
+/* ============================= */
+/* MODE TABLETTE (768px à 1024px) */
+/* ============================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /* HERO */
+  .hero-content {
+    flex-direction: row;       /* toujours côte à côte */
+    flex-wrap: wrap;           /* permet au mockup de descendre si espace limité */
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .hero-text {
+    flex: 1 1 50%;
+    max-width: 500px;
+    text-align: left;
+  }
+
+  .hero-mockup {
+    flex: 1 1 40%;
+    max-width: 400px;
+    margin-top: 0;
+  }
+
+  .hero-mockup img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* CARTES STATS */
+  .stats-cards {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .stat-card {
+    flex: 1 1 45%; /* 2 colonnes si possible */
+    max-width: 45%;
+    margin-bottom: 20px;
+  }
+
+  /* POINTS NÉGATIFS */
+  .pain-columns {
+    grid-template-columns: 1fr 1fr; /* 2 colonnes si possible */
+    gap: 30px;
+    text-align: left;
+  }
+
+  /* CTA */
+  .pain-cta {
+    padding: 16px 35px;
+    font-size: 1rem;
+  }
+
+  /* HERO ARRONDIE */
+  .hero {
+    border-radius: 30px;
+    padding: 60px 30px;
+  }
+
+}
+/* ============================= */
+/* SECTION SERVICES              */
+/* ============================= */
+.services-section {
+  padding: 100px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.services-intro {
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.services-small-text {
+  color: #111111;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.services-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.services-desc {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* CARTES */
+.services-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  flex: 1 1 45%;
+  min-width: 280px;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* CARTE MASTERCLASS */
+.masterclass-card {
+  background: linear-gradient(135deg, #7a143a, #2b0016);
+  color: #fff;
+}
+
+.masterclass-card .service-card-title {
+  color: #f2b705;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.masterclass-card .service-btn {
+  background: #ffffffc7;
+  color: #111;
+}
+
+/* CARTE COACHING */
+.coaching-card {
+  background: #f2f2f2;
+  color: #111;
+}
+
+.coaching-card .service-card-title {
+  color: #7a143a;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.coaching-card .service-card-subtitle {
+  font-size: 0.95rem;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.coaching-card ul {
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.coaching-card li {
+  margin-bottom: 10px;
+}
+
+/* BOUTONS */
+.service-btn {
+  padding: 15px 35px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: auto;
+  transition: 0.3s;
+}
+
+.service-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* Boutons par type */
+.masterclass-btn {
+  background: #fff;
+  color: #111;
+}
+
+.coaching-btn {
+  background: #7a143a;
+  color: #fff;
+}
+
+/* HOVER subtil sur cartes */
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+}
+
+/* ============================= */
+/* RESPONSIVE                     */
+/* ============================= */
+@media (max-width: 1024px) {
+  .services-cards {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .service-card {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .service-card {
+    flex: 1 1 100%;
+  }
+
+  .services-intro {
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-title {
+    font-size: 1.7rem;
+  }
+
+  .service-card .service-card-title {
+    font-size: 1.3rem;
+  }
+}
+/* ============================= */
+/* SECTION SERVICES AMELIOREE */
+/* ============================= */
+.services-section {
+  padding: 120px 20px;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.services-intro {
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.services-small-text {
+  color: #111;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.services-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 25px;
+}
+
+.services-desc {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* CARTES */
+.services-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  flex: 1 1 45%;
+  min-width: 280px;
+  padding: 35px 30px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  position: relative;
+  overflow: hidden;
+}
+
+/* MASTERCLASS */
+.masterclass-card {
+  background: linear-gradient(135deg,#153f77);
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(5, 10, 122, 0.35);
+}
+
+.masterclass-card::before {
+  content: "📈";
+  font-size: 3rem;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  ;
+}
+
+.masterclass-card .service-card-title {
+  color: #05f283;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+.masterclass-btn:hover {
+  background: #fff;
+  color: #1b147a;
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.397);
+}
+
+/* COACHING */
+
+
+
+.coaching-card::before {
+  content: "👤";
+  font-size: 3rem;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  ;
+}
+
+.coaching-card .service-card-title {
+  color: #00ff88;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.coaching-card .service-card-subtitle {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.coaching-card ul {
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.coaching-card li {
+  margin-bottom: 10px;
+}
+
+.coaching-btn {
+  background: #0e1eaf;
+  color: #fff;
+  padding: 16px 40px;
+  border-radius: 25px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.coaching-btn:hover {
+  background: #ffffff52;
+  color: #23147a;
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* HOVER GLOBAL CARTE */
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.18);
+  background-position: right bottom;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .services-cards{ flex-wrap:wrap; gap:25px; }
+  .service-card{ flex:1 1 48%; }
+}
+
+@media(max-width:768px){
+  .services-cards{ flex-direction:column; gap:30px; }
+  .service-card{ flex:1 1 100%; text-align:center; }
+  .service-card ul{ text-align:center; padding-left:0; }
+}
+
+@media(max-width:480px){
+  .services-title{ font-size:1.8rem; }
+  .service-card .service-card-title{ font-size:1.4rem; }
+}
+
+/* ============================= */
+/* SECTION ACADEMY / CALL VIP HERO-STYLE */
+/* ============================= */
+.academy-section { padding: 100px 20px; background: #fff; }
+
+/* ===== PARTIE SUPERIEURE ===== */
+.academy-top {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.academy-mockup {
+  flex:1 1 400px;
+  display: flex;
+  justify-content: center;
+  background: none; /* supprime fond blanc */
+  border: none;     /* supprime bordure */
+  padding: 0;
+}
+
+.academy-mockup img {
+  display: block;
+  max-width: 100%;
+  border-radius: 30px;
+  background: none; 
+   background: transparent;
+  box-shadow: none; /* plus aucune ombre */
+}
+
+
+
+
+.academy-text {
+  flex:1 1 500px;
+}
+
+.academy-text h2 {
+  font-size:2.2rem;
+  font-weight:700;
+  color:#111;
+  margin-bottom:20px;
+}
+
+.academy-text ul {
+  list-style:none;
+  padding-left:0;
+  margin-bottom:20px;
+}
+
+.academy-text ul li {
+  margin-bottom:15px;
+  font-size:1rem;
+  line-height:1.5;
+}
+
+.academy-text p {
+  color:#333;
+  line-height:1.7;
+  margin-bottom:25px;
+}
+
+/* Bouton CTA */
+.btn-academy {
+  display:inline-block;
+  padding:15px 40px;
+  background: linear-gradient(135deg,#f2b705,#f29405);
+  color:#111;
+  font-weight:700;
+  border-radius:25px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn-academy:hover {
+  transform:translateY(-4px);
+  box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* ===== PARTIE INFERIEURE ===== */
+.academy-bottom {
+  display:flex;
+  align-items:center;
+  gap:60px;
+  flex-wrap:wrap;
+}
+
+.academy-info {
+  flex:1 1 500px;
+}
+
+.academy-info .badge {
+  display:inline-block;
+  background:#ffc0cb;
+  color:#111;
+  font-weight:600;
+  padding:5px 15px;
+  border-radius:20px;
+  margin-bottom:15px;
+  font-size:0.9rem;
+}
+
+.academy-info h3 {
+  font-size:2rem;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+.academy-info p {
+  line-height:1.7;
+  margin-bottom:25px;
+}
+
+.academy-zoom {
+  flex:1 1 400px;
+  position:relative;
+  display:flex;
+  justify-content:center;
+  background: none; /* supprime fond blanc */
+  border: none;
+  padding: 0;
+}
+
+.academy-zoom img {
+  display: block;
+  width:100%;
+  border-radius:30px;
+  box-shadow:0 25px 60px rgba(0,0,0,0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.academy-zoom img:hover {
+  transform: translateY(-8px);
+  box-shadow:0 35px 80px rgba(0,0,0,0.25);
+}
+
+/* Badge Zoom */
+.zoom-badge {
+  position:absolute;
+  top:15px;
+  right:15px;
+  background:#f2b705;
+  color:#111;
+  padding:8px 15px;
+  border-radius:20px;
+  font-weight:700;
+  font-size:0.9rem;
+}
+
+/* Bouton Messenger */
+.messenger-btn {
+  position:absolute;
+  bottom:15px;
+  right:15px;
+  background:#0084ff;
+  color:#fff;
+  padding:12px 16px;
+  border-radius:50%;
+  font-size:1.2rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.messenger-btn .notif {
+  position:absolute;
+  top:-5px;
+  right:-5px;
+  background:red;
+  color:#fff;
+  font-size:0.7rem;
+  padding:2px 5px;
+  border-radius:50%;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .academy-top, .academy-bottom{ gap:40px; }
+}
+
+@media(max-width:768px){
+  .academy-top, .academy-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  .academy-mockup, .academy-zoom {
+    order: 2;
+    margin-top: 30px;
+  }
+  .academy-text, .academy-info {
+    order: 1;
+  }
+}
+
+@media(max-width:480px){
+  .academy-text h2, .academy-info h3{ font-size:1.6rem; }
+  .academy-text ul li, .academy-text p, .academy-info p{ font-size:0.95rem; }
+}
+
+/* ============================= */
+/*        CTA BANNER FINAL       */
+/* ============================= */
+.cta-banner {
+  width: 100%;
+  padding: 90px 20px;
+  background: #f5b21b; /* jaune/orange identique */
+  text-align: center;
+}
+
+.cta-small {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #7a143a; /* bordeaux foncé */
+  margin-bottom: 20px;
+}
+
+.cta-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.25;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 16px 40px;
+  background: #fff;
+  color: #111;
+  font-weight: 700;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-title {
+    font-size: 1.7rem;
+  }
+}
+
+.cta-banner {
+  margin-top: 120px;
+  border-radius: 30px ;
+}
+
+.testimonials-section {
+  padding: 120px 20px;
+  background: #f7f8fc;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials-badge {
+  background: #f8c0d8;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.testimonials-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 25px 0 60px;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.testimonial-card {
+  background: #fff;
+  max-width: 620px;
+  padding: 50px 40px 40px;
+  border-radius: 30px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+}
+
+.stars {
+  color: #f2b705;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 30px;
+  transition: opacity 0.3s ease;
+}
+
+.testimonial-name {
+  font-weight: 700;
+}
+
+.testimonial-role {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Compteur */
+.testimonial-counter {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Flèches */
+.arrow {
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  transform: scale(1.1);
+}
+
+/* Avatars */
+.testimonial-avatars {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.a1 { top: 20%; left: 10%; }
+.a2 { top: 45%; left: 5%; }
+.a3 { bottom: 20%; left: 18%; }
+.a4 { top: 35%; right: 6%; }
+.a5 { bottom: 25%; right: 15%; }
+
+/* Avatars dynamiques */
+.testimonial-avatars {
+  position: absolute;
+  inset: 0; /* couvre tout le conteneur */
+  pointer-events: none;
+}
+
+/* Taille et position par défaut (desktop) */
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.a1 { top: 20%; left: 10%; }
+.a2 { top: 45%; left: 5%; }
+.a3 { bottom: 20%; left: 18%; }
+.a4 { top: 35%; right: 6%; }
+.a5 { bottom: 25%; right: 15%; }
+
+/* Mobile : ajuster la position et taille des avatars */
+@media (max-width: 768px) {
+  .testimonial-avatars {
+    position: relative; /* plus absolute pour ne pas chevaucher le texte */
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* espace entre avatars */
+    margin-top: 20px; /* espace avec le texte */
+    pointer-events: none;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    position: static; /* s’adapte au flex container */
+    border: 3px solid #fff;
+  }
+}
+
+/* Mobile : garder les avatars absolus mais ajuster leur position pour ne pas toucher le texte */
+@media (max-width: 768px) {
+  .testimonial-avatars {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .avatar {
+    width: 50px; /* légèrement plus petit que sur PC */
+    height: 50px;
+    border: 3px solid #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  /* Ajuster les positions individuelles pour mobile */
+  .a1 { top: 10%; left: 10%; }    /* premier avatar plus bas */
+  .a2 { top: 35%; left: 5%; }
+  .a3 { bottom: 15%; left: 18%; }
+  .a4 { top: 25%; right: 6%; }
+  .a5 { bottom: 20%; right: 15%; }
+}
+
+/* AVATARS FIXES ET VISIBLES SUR TOUS LES ÉCRANS */
+.testimonial-avatars {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: block !important; /* s'assurer qu'ils restent visibles sur mobile */
+}
+
+/* Taille et style des avatars */
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Position des avatars - desktop */
+.a1 { top: 20%; left: 10%; }
+.a2 { top: 45%; left: 5%; }
+.a3 { bottom: 20%; left: 18%; }
+.a4 { top: 35%; right: 6%; }
+.a5 { bottom: 25%; right: 15%; }
+
+/* Ajustements pour mobile/tablette */
+@media(max-width: 768px){
+  .avatar { width: 50px; height: 50px; border: 3px solid #fff; }
+  .a1 { top: 55%; left: 10%; }   /* descendre pour ne pas toucher le texte */
+  .a2 { top: 40%; left: 5%; }
+  .a3 { bottom: 15%; left: 18%; }
+  .a4 { top: 55%; right: 6%; }
+  .a5 { bottom: 20%; right: 15%; }
+}
+
+/* FAQ QUESTIONS*/
+
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.faq-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.faq-header p {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.faq-item {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.faq-icon {
+  position: absolute;
+  right: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  padding: 0 20px 20px 20px;
+  display: none;
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Animation rotation du "+" */
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+
+/* Affiche la réponse */
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+  .faq-section { padding: 40px 15px; }
+  .faq-header h2 { font-size: 2rem; }
+  .faq-question { font-size: 1rem; padding: 15px; }
+  .faq-answer { font-size: 0.95rem; padding: 0 15px 15px 15px; }
+  .faq-icon { right: 20px; font-size: 1.3rem; }
+}
+
+
+/* Section CTA */
+.cta-banner {
+  background-color: #F5B016; /* jaune orangé vif */
+  border-radius: 40px;
+  padding: 50px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenu */
+.cta-content {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Sur-titre */
+.cta-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+/* Titre principal */
+.cta-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000;
+  line-height: 1.3;
+}
+
+/* Description */
+.cta-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+/* Bouton CTA */
+.cta-button {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Effet hover */
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 1.5rem;
+  }
+  .cta-subtitle {
+    font-size: 1rem;
+  }
+  .cta-description {
+    font-size: 0.95rem;
+  }
+  .cta-button {
+    padding: 12px 30px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-title {
+    font-size: 1.3rem;
+  }
+  .cta-subtitle {
+    font-size: 0.9rem;
+  }
+  .cta-description {
+    font-size: 0.9rem;
+  }
+  .cta-button {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Footer général */
+.site-footer {
+  background-color: #4a041c;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 50px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Colonnes */
+.footer-col {
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.footer-col h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+  color: #f1ac19; /* couleur accentuée */
+}
+
+/* Colonne Brand */
+.footer-brand .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-brand .logo-icon {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.footer-brand .brand-name {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-desc {
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  text-decoration: none;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #4a041c;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .footer-container {
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-col {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .footer-brand .logo {
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+/* Footer général */
+.site-footer {
+  background-color: #4a041c;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 80px 20px 50px; /* ↑ padding-top augmenté pour espacement */
+  margin-top: 60px; /* espace entre section précédente et footer */
+}
+
+/* ===== Style global des sections ===== */
+section {
+  width: 100%;
+  max-width: 1200px; /* Limite la largeur pour que ce soit pro */
+  margin: 0 auto;    /* Centre la section horizontalement */
+  padding: 80px 20px; /* Espace interne haut/bas et côté */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre le contenu */
+  justify-content: center;
+}
+
+/* Espacement entre les sections */
+section + section {
+  margin-top: 0; /* Évite double marge */
+}
+
+/* Exemple pour fond différent si nécessaire */
+#hero { background-color: #ffffff; }
+#testimonials { background-color: #f9f9f9; }
+#faq { background-color: #ffffff; }
+#cta-final { background-color: #f5b016; }
+footer { background-color: #4a041c; color: #fff; }
+
+/* Ajustement responsive */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 15px;
+  }
+}
+
+/* ===== SECTION HERO FULL PAGE ===== */
+#hero {
+  width: 100%;
+  height: 100vh; /* prend toute la hauteur de l'écran */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centre verticalement */
+  align-items: center;     /* centre horizontalement */
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: #ffffff; /* ou ton background */
+  scroll-margin-top: 0; /* pour que les ancres scrollent bien */
+}
+
+/* Texte et bouton au centre */
+#hero h1, 
+#hero p, 
+#hero .cta-btn {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* ===== ESPACEMENT ENTRE SECTIONS ===== */
+section {
+  width: 100%;
+  padding: 80px 20px; /* espace interne pour ne pas coller les sections */
+  box-sizing: border-box;
+}
+
+/* Pour coller visuellement les sections comme un site pro */
+section + section {
+  margin-top: 0; /* supprime les marges verticales par défaut entre sections */
+}
+
+/* Footer espacé de la section précédente */
+footer {
+  padding: 80px 20px;
+  background-color: #05044a;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px; /* espace entre colonnes */
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  #hero {
+    padding: 0 15px;
+    height: 100vh;
+  }
+
+  section {
+    padding: 60px 15px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 15px;
+    gap: 30px;
+  }
+}
+
+/* ===== RESET CONTENEUR GLOBAL ===== */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ===== SECTION HERO FULL SCREEN ===== */
+.hero {
+  width: 100vw;        /* largeur totale de la fenêtre */
+  height: 100vh;       /* hauteur totale de la fenêtre */
+  margin: 0;           /* supprime tout margin par défaut */
+  padding: 0;          /* supprime padding interne */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f0a5a, #01002b); /* ton fond */
+  box-sizing: border-box;
+}
+
+/* ===== SECTIONS SUIVANTES ===== */
+section {
+  width: 100vw;        /* largeur totale */
+  max-width: 100%;     /* annule tout max-width précédent */
+  margin: 0;           /* supprime marge centrage */
+  padding: 80px 20px;  /* padding vertical et horizontal si tu veux garder un peu d'espace interne */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Supprime la marge entre les sections */
+section + section {
+  margin-top: 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  background-color: #19044a;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  section, .hero, footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/* ===== FOOTER FULL WIDTH ===== */
+footer, .site-footer {
+  width: 100vw;        /* largeur totale de la fenêtre */
+  max-width: 100%;     /* annule toute limite précédente */
+  margin: 0;           /* supprime margin auto */
+  padding: 80px 20px;  /* espace interne top/bottom et côtés */
+  box-sizing: border-box;
+  background-color: #4a041c;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;           /* espace entre colonnes */
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  footer, .site-footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 15px;
+    gap: 30px;
+  }
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* ===== RESET GLOBAL ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* ===== FOOTER FULL SCREEN ===== */
+footer, .site-footer {
+  width: 100vw;          /* prend toute la largeur de la fenêtre */
+  max-width: 100vw;      /* ne limite pas la largeur */
+  margin: 0;
+  padding: 80px 20px;
+  background-color: #4a041c;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+/* Supprimer les limites internes */
+footer .footer-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  footer {
+    padding: 60px 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  footer .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.site-footer {
+  width: 100vw;
+  background-color: #04054a;
+  color: #fff;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  
+  margin-top: 100px; /* ← espace avec la section précédente */
+}
+.site-footer {
+  width: 100vw;               /* plein écran horizontal */
+  background-color: rgb(4, 11, 74);
+  color: #fff;
+  padding: 80px 20px;         /* espace interne autour du contenu */
+  box-sizing: border-box;
+  margin-top: 100px;           /* espace avec la section précédente */
+  margin-bottom: 0;            /* pas d'espace sous le footer */
+}
+/* RESET GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* pour éviter un scroll horizontal */
+}
+
+/* CONTAINER PRINCIPAL */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* le body prend tout l'écran */
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* prend tout l'écran */
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  flex: 1; /* pousse le footer vers le bas si le contenu est petit */
+}
+
+footer.site-footer {
+  margin-top: 100px; /* si tu veux un petit espace au-dessus du footer */
+  margin-bottom: 0;  /* aucun espace en dessous */
+  width: 100vw;
+  box-sizing: border-box;
+}
+/* ===== CORRECTION FOOTER MOBILE DEFINITIVE ===== */
+@media (max-width: 768px) {
+
+  body {
+    display: block !important;
+  }
+
+  footer.site-footer {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    margin: 0;
+    padding: 60px 20px;
+    overflow: visible;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    gap: 30px;
+  }
+
+  .footer-col {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .footer-col * {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .footer-brand {
+    order: 1;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+/* ===== ORDRE FOOTER MOBILE ===== */
+@media (max-width: 768px) {
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-brand {
+    order: 1;
+  }
+
+  .footer-col:nth-of-type(2) {
+    order: 2; /* Pages */
+  }
+
+  .footer-col:nth-of-type(3) {
+    order: 3; /* Services */
+  }
+
+  .footer-col:nth-of-type(4) {
+    order: 4; /* Disclaimer */
+  }
+
+  .footer-col {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* ===== HERO MOBILE FIX PRO ===== */
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 100svh; /* meilleur que 100vh sur mobile */
+    height: auto;
+    padding: 100px 16px 40px; /* espace navbar + contenu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    gap: 32px;
+  }
+
+  .hero-text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 12px 0 20px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .hero-mockup {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-mockup img {
+    width: 85%;
+    max-width: 320px;
+    height: auto;
+  }
+}
+.about-section {
+  padding: 120px 20px;
+  background: #ffffff;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-badge {
+  display: inline-block;
+  background: #f8c0d8;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.about-text h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.about-text h3 {
+  font-size: 1.3rem;
+  margin: 30px 0 15px;
+}
+
+.about-text p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.about-text ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.about-text li {
+  margin-bottom: 10px;
+}
+
+.about-signature {
+  margin-top: 30px;
+  padding-left: 20px;
+  border-left: 4px solid rgb(27, 20, 122);
+}
+
+.about-photo img {
+  width: 100%;
+  
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-signature {
+    border-left: none;
+    border-top: 4px solid rgb(27, 20, 122);
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}
+.footer-socials {
+  margin-top: 20px;
+}
+
+.footer-socials span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #141b7a;
+  transform: translateY(-3px);
+}
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-bottom {
+  margin-top: 40px;          /* espace avec le contenu au-dessus */
+  padding: 15px 10px 20px;   /* respirable sur mobile */
+  text-align: center;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+  .coaching-card {
+            background: linear-gradient(135deg, rgba(0, 20, 100, 0.9), rgba(0, 40, 150, 0.7));
+        }
+.coaching-card {
+  color: #fff;
+}
+.social-icons .text-decoration{
+  text-decoration: none;
+}
+
+
+
+  </style>
+</head>
+<body><main>
+
+
+  <!-- NAVBAR FIXE -->
+  <nav class="navbar">
+    <div class="logo"><span>VTS</span> Vlord Trading School</div>
+    <div class="nav-links">
+      <a href="#accueil">ACCUEIL</a>
+      <a href="#services-section">MASTERCLASS</a>
+      <a href="#services-section">COACHING</a>
+      <a href="#about-section">A PROPOS</a>
+      <a href="#faq-section">FAQ</a>
+      <a href="#site-footer">CONTACT</a>
+    </div>
+    <a 
+  href="https://wa.me/237620796954?text=Bonjour%20je%20souhaite%20rejoindre%20Vlord%20Trading%20School"
+  class="nav-cta"
+  target="_blank"
+>
+  Commencer
+</a>
+
+    <div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+  <a href="#accueil">ACCUEIL</a>
+  <a href="#services-section">Masterclass</a>
+  <a href="#services-section">Coaching</a>
+  <a href="#about-section"> A PROPOS</a>
+  <a href="#faq-section"> FAQ</a>
+  <a href="#site-footer">Contact</a>
+  <a 
+    href="https://wa.me/237620796954?text=Bonjour%20je%20souhaite%20rejoindre%20Vlord%20Trading%20School"
+    class="mobile-cta"
+    target="_blank"
+  >
+    Commencer
+  </a>
+</div>
+
+  <div class="stats-cards fade-up">
+    <ul class="pain-left fade-left">
+...
+</ul>
+
+<ul class="pain-right fade-right">
+...
+</ul>
+
+
+
+
+  <!-- HERO SECTION -->
+  <section id="accueil" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Apprenez et Maîtrisez le Trading</h1>
+        <p>Acquérez les compétences essentielles pour opérer sur les marchés financiers en toute confiance, avec un accompagnement complet, de l’apprentissage des bases aux stratégies avancées, pour devenir un trader autonome et performant.</p>
+        <div class="hero-buttons">
+          <a href="https://wa.me/237620796954?text=Bonjour%20je%20souhaite%20rejoindre%20Vlord%20Trading%20School" class="btn-yellow">Rejoindre dès maintenant</a>
+          <a href="https://wa.me/237620796954?text=Bonjour%20je%20souhaite%20rejoindre%20Vlord%20Trading%20School" class="btn-white">En savoir plus</a>
+        </div>
+      </div>
+      <div class="hero-mockup">
+        <img src="pp.png" alt="Mockup téléphone trading">
+      </div>
+    </div>
+  </section> 
+<section class="pain-section">
+
+  <!-- CARTES STATS -->
+  <div class="stats-cards">
+    <div class="stat-card stat-bordeaux">
+      <h2>+05</h2>
+      <p>Années d'expérience</p>
+    </div>
+
+    <div class="stat-card stat-yellow">
+      <h2>+140</h2>
+      <p>Élèves formés</p>
+    </div>
+
+    <div class="stat-card stat-blue">
+      <h2>+50</h2>
+      <p>Vidéos de formation</p>
+    </div>
+  </div>
+
+  <!-- TITRE -->
+  <h3 class="pain-title">
+    Sans une bonne formation, vous risquez de perdre du temps précieux à tâtonner
+    et à faire des erreurs évitables.
+  </h3>
+
+  <!-- POINTS NEGATIFS -->
+ <div class="pain-columns">
+  <ul class="pain-left">
+    <li><span class="x-icon">✕</span> Perte de capital due à des décisions mal informées</li>
+    <li><span class="x-icon">✕</span> Stress intense face à l'incertitude constante</li>
+    <li><span class="x-icon">✕</span> Incapacité à reconnaître et à saisir de réelles opportunités</li>
+  </ul>
+
+  <ul class="pain-right">
+    <li><span class="x-icon">✕</span> Risque accru de burn-out face aux défis du marché</li>
+    <li><span class="x-icon">✕</span> Prises de décisions irrationnelles en période de stress</li>
+    <li><span class="x-icon">✕</span> Difficulté à maintenir une discipline de trading constante</li>
+  </ul>
+</div>
+
+
+  <!-- TEXTE -->
+  <p class="pain-text">
+    Que vous souhaitiez débuter ou que vous soyez déjà débutant, sans une formation
+    et un accompagnement adapté, vous risquez de perdre un temps considérable
+    et de limiter votre potentiel de croissance.
+  </p>
+
+  <!-- BOUTON -->
+  <a href="https://wa.me/237620796954?text=Bonjour%20je%20souhaite%20rejoindre%20Vlord%20Trading%20Schools" class="pain-cta">
+    Ne perdez plus de temps. Rejoignez-nous maintenant !
+  </a>
+
+</section>
+
+<section id="services-section" class="services-section">
+  <!-- TEXTE INTRO -->
+  <div class="services-intro">
+    <p class="services-small-text">Nos services pour vous</p>
+    <h2 class="services-title">Tout ce dont vous avez besoin pour devenir Trader</h2>
+    <p class="services-desc">
+      Découvrez nos programmes complets conçus pour vous accompagner à chaque étape de votre parcours de trader. 
+      De l'apprentissage des fondamentaux à la maîtrise des stratégies avancées, nous mettons à votre disposition tous les outils nécessaires pour réussir sur les marchés financiers.
+    </p>
+  </div>
+<div class="services-cards">
+
+  <!-- CARTE MASTERCLASS -->
+  <div class="service-card masterclass-card">
+    <h3 class="service-card-title">MASTERCLASS</h3>
+
+    <p class="service-card-text">
+      Apprenez les bases, perfectionnez vos stratégies, et maîtrisez les outils essentiels.<br><br>
+      Formation de groupe en ligne et en présentiel (Forex & Indices Synthétiques).<br><br>
+      De la compréhension des bases à l’application de stratégies avancées.
+    </p>
+
+    <div class="pricing-box">
+      <div class="duration">
+        ⏱ 1 mois de formation + 2 mois d’accompagnement
+      </div>
+
+      <div class="price-info">
+        <div class="old-price">750$ / 400 000 FCFA</div>
+        <div class="current-price">550$ / 300 000 FCFA</div>
+        <div class="savings">Économisez 200$</div>
+      </div>
+
+      <div class="bonus">
+        <strong>Bonus inclus :</strong> PDF, checklist, groupe Telegram + live quotidien
+      </div>
+    </div>
+
+    <a href="https://wa.me/237620796954?text=Bonjour%20je%20souhaite%20découvrir la masterclass de l'academie%20Vlord%20Trading%20School" class="service-btn masterclass-btn">
+      Découvrir la masterclass
+    </a>
+  </div>
+
+  <!-- CARTE COACHING -->
+  <div class="service-card coaching-card">
+    <h3 class="service-card-title">COACHING</h3>
+
+    <p class="service-card-text">
+     un Accompagnement sur mésure pour atteindre vos objectifs
+    </p>
+
+    <ul>
+      <li>Analyse complète de vos trades</li>
+      <li>Suivi intensif & résultats rapides</li>
+      <li>Coaching privé structuré</li>
+    </ul>
+
+    <div class="pricing-box">
+      <div class="duration">
+        ⏱ 1 mois de formation + 2 mois d’accompagnement privé
+      </div>
+
+      <div class="price-info">
+        <div class="old-price">3 000$ / 1 650 000 FCFA</div>
+        <div class="current-price">2 200$ / 1 200 000 FCFA</div>
+        <div class="savings">Économisez 800$</div>
+      </div>
+
+      <div class="elite-badge">
+        🏆 Programme Elite 1.1 - suivi intensif
+      </div>
+    </div>
+
+    <a href="https://wa.me/237620796954?text=Bonjour%20je%20souhaite%20en savoir plus sur le coaching de l'academie%20Vlord%20Trading%20School" class="service-btn coaching-btn">
+      En savoir plus
+    </a>
+  </div>
+
+</div>
+
+
+  <!-- SECTION POURQUOI CHOISIR L'ACADEMIE -->
+<section class="academy-section">
+  <!-- PARTIE SUPERIEURE -->
+  <div class="academy-top">
+    <!-- Mockup iPhone gauche -->
+    <div class="academy-mockup">
+      <img src="remove.png" alt="Mockup iPhone Trading">
+    </div>
+
+    <!-- Texte droite -->
+    <div class="academy-text">
+      <h2>Pourquoi choisir Notre Académie ?</h2>
+      <ul>
+        <li><strong>Approche Pédagogique Unique</strong> : Des cours structurés et progressifs adaptés à tous les niveaux.</li>
+        <li><strong>Expérience Pratique</strong> : Études de cas réels et simulation de trading.</li>
+        <li><strong>Équipe d'Experts</strong> : Formateurs et coachs expérimentés dans les marchés financiers.</li>
+        <li><strong>Communauté Active</strong> : Rejoignez un réseau d'apprenants et de professionnels passionnés.</li>
+      </ul>
+      <p>Notre programme de formation intègre l'analyse technique avancée avec le price action, la compréhension des marchés financiers, la gestion de risque et tous les aspects autour.</p>
+      <a href="https://wa.me/237620796954?text=Bonjour%20je%20souhaite%20rejoindre%20Vlord%20Trading%20School" class="btn-academy">Rejoignez-nous dès aujourd'hui</a>
+    </div>
+  </div>
+
+  <!-- PARTIE INFERIEURE -->
+  <div class="academy-bottom">
+    <!-- Texte gauche -->
+    <div class="academy-info">
+      <span class="badge">Un Accompagnement sur mesure</span>
+      <h3>Devenez membre et participez à tous nos Call VIP</h3>
+      <p>En rejoignant notre académie, en plus des ressources éducatives mises à votre disposition, nous vous intégrons dans notre groupe privé pour vous épauler et vous accompagner.
+      <br><br>
+      Vous pourrez ainsi participer à nos lives hebdomadaires, nos nombreux Call VIP mensuels ainsi que plusieurs autres avantages.</p>
+      <a href="https://wa.me/237620796954?text=Bonjour%20je%20souhaite%20rejoindre%20Vlord%20Trading%20School" class="btn-academy">Rejoignez-nous dès aujourd'hui</a>
+    </div>
+
+    <!-- Mockup Zoom droite -->
+    <div class="academy-zoom">
+      <img src="zoom.jpg" alt="Capture Zoom">
+      <span class="zoom-badge">+ de 140 Étudiants Formés</span>
+      <div class="messenger-btn">
+        💬<span class="notif">1</span>
+      </div>
+    </div>
+  </div>
+
+  <section id="about-section" class="about-section">
+  <div class="about-container">
+
+    <!-- TEXTE -->
+    <div class="about-text">
+      <span class="about-badge">À propos de nous</span>
+      <h2>Vlord Trading School, bien plus qu’une formation</h2>
+
+      <p>
+        <strong>Vlord Trading School</strong> est une académie de trading moderne,
+        conçue pour accompagner les débutants, les traders intermédiaires et
+        toutes les personnes souhaitant apprendre un système de trading clair,
+        structuré et performant.
+      </p>
+
+      <p>
+        Notre approche va au-delà de la théorie. Nous formons des traders capables
+        de comprendre le marché, de prendre des décisions rationnelles et
+        d’appliquer une méthode cohérente sur le long terme.
+      </p>
+
+      <h3>Notre mission</h3>
+      <p>
+        Transformer des traders hésitants en traders confiants, disciplinés et autonomes.
+        Chez Vlord Trading School, nous croyons que la rentabilité n’est pas une question
+        de chance, mais de méthode, de discipline et de psychologie.
+      </p>
+
+      <h3>Ce qui nous différencie</h3>
+      <ul>
+        <li><strong>Une formation adaptée à tous les niveaux</strong>, du débutant au trader avancé.</li>
+        <li><strong>Un système de trading clair et structuré</strong>, avec des règles précises
+        d’analyse, d’entrée, de sortie et de gestion du risque.</li>
+        <li><strong>Un accompagnement réel et humain</strong>, avant, pendant et après la formation.</li>
+        <li><strong>Une vision long terme</strong>, orientée vers un trading sérieux, réaliste et durable.</li>
+      </ul>
+
+      <div class="about-signature">
+        <p>
+          “J’ai créé Vlord Trading School pour répondre à une réalité que j’ai moi-même vécue :
+          beaucoup veulent réussir dans le trading, mais manquent de méthode, de structure et
+          d’accompagnement.
+        </p>
+        <p>
+          Ici, je ne vous apprends pas à trader au hasard. Je vous transmets un système clair,
+          une discipline et une vision long terme, basés sur l’expérience réelle du marché.”
+        </p>
+
+        <strong>— Sofiane Heles (Vlordtradingofficial)</strong><br>
+        <span>Fondateur de Vlord Trading School</span>
+      </div>
+    </div>
+    
+
+    <!-- PHOTO FONDATEUR -->
+    <div class="about-photo">
+      <img src="vlordp1.png" alt="Sofiane Heles - Fondateur Vlord Trading School">
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-banner">
+  <p class="cta-small">VLORD TRADING SCHOOL</p>
+  <h2 class="cta-title">
+    Votre parcours vers l'excellence en<br>
+    trading commence ici
+  </h2>
+  <a href="https://wa.me/237620796954?text=Bonjour%20je%20souhaite%20rejoindre%20Vlord%20Trading%20School" class="cta-button">Rejoindre l'académie</a>
+</section>
+
+<section class="testimonials-section">
+
+  <span class="testimonials-badge">Nos Témoignages</span>
+  <h2 class="testimonials-title">Ce que nos Élèves disent de nous</h2>
+
+  <div class="testimonial-wrapper" id="testimonialWrapper">
+
+    <!-- Flèche gauche -->
+    <div class="arrow left-arrow">❮</div>
+
+    <!-- Carte -->
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+
+      <p class="testimonial-text" id="testimonialText"></p>
+
+      <h4 class="testimonial-name" id="testimonialName"></h4>
+      <span class="testimonial-role" id="testimonialRole"></span>
+
+      <!-- Compteur -->
+      <div class="testimonial-counter" id="testimonialCounter"></div>
+    </div>
+
+    <!-- Flèche droite -->
+    <div class="arrow right-arrow">❯</div>
+
+  </div>
+
+  <!-- Avatars dynamiques -->
+  <div class="testimonial-avatars">
+    <img id="avatar1" src="fome.JPG" class="avatar a1">
+    <img id="avatar2" src="fome1.JPEG" class="avatar a2">
+    <img id="avatar3" src="fome.JPG" class="avatar a3">
+    <img id="avatar4" src="fome1.JPEG" class="avatar a4">
+    <img id="avatar5" src="fome.JPG" class="avatar a5">
+  </div>
+
+</section>
+
+ <!-- FAQ QUESTIONS -->
+
+<section id="faq-section" class="faq-section">
+  <div class="faq-header">
+    <h2>FAQ</h2>
+    <p>Vous avez des questions ? Nous avons les réponses</p>
+  </div>
+
+  <div class="faq-container">
+    <div class="faq-item">
+      <div class="faq-question">
+        À qui s’adresse notre académie de trading ?
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-answer">
+        Notre académie s’adresse à tous ceux qui souhaitent apprendre le trading, débutants ou confirmés.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Quels types de formations proposez-vous ?
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-answer">
+        Nous proposons des formations en ligne, en présentiel et des programmes de coaching personnalisés.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Puis-je suivre les formations à distance ?
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-answer">
+        Oui, toutes nos formations peuvent être suivies 100% à distance via notre plateforme en ligne.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Le coaching est-il personnalisé ?
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-answer">
+        Oui, chaque élève bénéficie d’un accompagnement personnalisé selon ses objectifs.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Quels sont les outils nécessaires pour suivre vos formations ?
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-answer">
+        Un ordinateur ou une tablette avec connexion internet suffit pour suivre toutes nos formations.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+ <section class="cta-banner">
+  <div class="cta-content">
+    <p class="cta-subtitle">Prêt à devenir un trader performant ? 🚀</p>
+    <h2 class="cta-title">🎓 Débutez maintenant et profitez de notre offre exclusive !</h2>
+    <p class="cta-description">
+      Inscrivez-vous aujourd'hui et bénéficiez d'un accès immédiat à nos modules de formation, 
+      une session de coaching gratuite pour établir vos objectifs, et un plan de trading personnalisé offert pour toute inscription avant 
+      <strong>10 FEVRIER 2026</strong>.
+    </p>
+    <a href="https://wa.me/237620796954?text=Bonjour%20je%20souhaite%20rejoindre%20Vlord%20Trading%20School" class="cta-button">👉 Rejoignez-nous dès maintenant</a>
+</section></main>
+
+ 
+  
+<footer id="site-footer" class="site-footer">
+  <div class="footer-container">
+
+    <!-- Colonne 1 : Identité et réseaux -->
+    <div class="footer-col footer-brand">
+      <div class="logo">
+        <div class="logo-icon">
+          <span class="crown">👑</span>
+          <span class="vts">VTS</span>
+        </div>
+        <span class="brand-name">VLORD TRADING SCHOOL</span>
+      </div>
+      <p class="brand-desc">L'académie la plus complète du marché francophone.</p>
+     <div class="footer-socials">
+  <span>Suivez-nous</span>
+
+  <div class="social-icons">
+    <a href="https://www.tiktok.com/@vlordtradingofficial?_r=1&_t=ZS-93Vk95JW8Gn" class="text-decoration" target="_blank" aria-label="TikTok">
+      <i class="fab fa-tiktok"></i>
+    </a>
+
+    <a href="https://www.facebook.com/share/1bfcSEpNWe/"  class="text-decoration" target="_blank" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="https://t.me/Vlordtrader" class="text-decoration" target="_blank" aria-label="Telegram">
+      <i class="fab fa-telegram-plane"></i>
+    </a>
+
+    <a href="https://www.instagram.com/vlordtradingofficial1?igsh=aGttaXB5cTJ0M2I%3D&utm_source=qr" class="text-decoration" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://www.snapchat.com/add/vlordtrading?share_id=0Hgl8lwYSnw&locale=fr-CM" class="text-decoration" target="_blank" aria-label="Snapchat">
+      <i class="fab fa-snapchat-ghost"></i>
+    </a>
+    <a href="https://youtube.com/@vlordtradingofficial?si=DfblQ6QY6DN17szJ" class="text-decoration" target="_blank" aria-label="youtube">
+      <i class="fab fa-youtube"></i>
+    </a>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Colonne 2 : Pages -->
+    <div class="footer-col">
+      <h3>Pages</h3>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">à propos</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+
+    <!-- Colonne 3 : Services -->
+    <div class="footer-col">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="#">Masterclass</a></li>
+        <li><a href="#">Coaching</a></li>
+      </ul>
+    </div>
+
+    <!-- Colonne 4 : Disclaimer -->
+    <div class="footer-col">
+      <h3>Disclaimer</h3>
+      <p>Ce contenu est à titre éducatif et ne constitue pas un conseil en investissement.</p>
+    </div>
+    </div>
+
+  <div class="footer-bottom">
+    © 2026 Vlord Trading School — Tous droits réservés
+  </div>
+
+</footer>
+
+
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    mobileMenu.classList.toggle("active");
+  });
+
+  // Fermer le menu quand on clique sur un lien
+  document.querySelectorAll(".mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      mobileMenu.classList.remove("active");
+    });
+  });
+
+
+  
+</script>
+
+<script>
+const testimonials = [
+  {
+    text: "Avant de rejoindre cette académie, je n'avais aucune idée du fonctionnement des marchés financiers. Grâce à leur accompagnement, j'ai acquis une vraie méthode.",
+    name: "Jean Yves",
+    role: "Trader débutant"
+  },
+  {
+    text: "Formation claire et structurée. Les coachs sont disponibles et les stratégies sont expliquées avec précision.",
+    name: "Patrick M.",
+    role: "Trader intermédiaire"
+  },
+  {
+    text: "Les calls VIP et la communauté font toute la différence. C’est la meilleure décision que j’ai prise.",
+    name: "Sandra K.",
+    role: "Étudiante en trading"
+  }
+];
+
+let index = 0;
+let interval;
+
+const textEl = document.getElementById("testimonialText");
+const nameEl = document.getElementById("testimonialName");
+const roleEl = document.getElementById("testimonialRole");
+const counterEl = document.getElementById("testimonialCounter");
+
+const leftArrow = document.querySelector(".left-arrow");
+const rightArrow = document.querySelector(".right-arrow");
+const wrapper = document.getElementById("testimonialWrapper");
+
+// Fonction pour afficher un témoignage
+function showTestimonial(i) {
+  // Fade out texte
+  textEl.style.opacity = 0;
+  nameEl.style.opacity = 0;
+  roleEl.style.opacity = 0;
+  counterEl.style.opacity = 0;
+
+  setTimeout(() => {
+    // Mettre à jour le contenu
+    textEl.textContent = testimonials[i].text;
+    nameEl.textContent = testimonials[i].name;
+    roleEl.textContent = testimonials[i].role;
+    counterEl.textContent = `${i + 1} / ${testimonials.length}`;
+
+    // Fade in
+    textEl.style.opacity = 1;
+    nameEl.style.opacity = 1;
+    roleEl.style.opacity = 1;
+    counterEl.style.opacity = 1;
+  }, 200);
+}
+
+// Flèches
+function next() {
+  index = (index + 1) % testimonials.length;
+  showTestimonial(index);
+}
+function prev() {
+  index = (index - 1 + testimonials.length) % testimonials.length;
+  showTestimonial(index);
+}
+
+
+
+// Événements flèches
+rightArrow.addEventListener("click", () => { next(); resetAutoSlide(); });
+leftArrow.addEventListener("click", () => { prev(); resetAutoSlide(); });
+
+// Swipe mobile
+let startX = 0;
+wrapper.addEventListener("touchstart", e => { startX = e.touches[0].clientX; });
+wrapper.addEventListener("touchend", e => {
+  let endX = e.changedTouches[0].clientX;
+  if (startX - endX > 50) next();
+  if (endX - startX > 50) prev();
+  resetAutoSlide();
+});
+
+// Initialiser
+showTestimonial(index);
+startAutoSlide();
+</script>
+
+<script>
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+  const question = item.querySelector(".faq-question");
+
+  question.addEventListener("click", () => {
+    // Toggle active pour afficher la réponse
+    item.classList.toggle("active");
+
+    // Fermer les autres réponses si vous voulez qu'une seule reste ouverte
+    faqItems.forEach(otherItem => {
+      if(otherItem !== item){
+        otherItem.classList.remove("active");
+      }
+    });
+  });
+});
+</script>
+
+
+</body>
+
+</html>
