@@ -1468,7 +1468,7 @@ img {
 /* Mobile : ajuster la position et taille des avatars */
 @media (max-width: 768px) {
   .testimonial-avatars {
-    position: relative; /* plus absolute pour ne pas chevaucher le texte */
+     /* plus absolute pour ne pas chevaucher le texte */
     display: flex;
     justify-content: center;
     gap: 10px; /* espace entre avatars */
@@ -1487,7 +1487,7 @@ img {
 /* Mobile : garder les avatars absolus mais ajuster leur position pour ne pas toucher le texte */
 @media (max-width: 768px) {
   .testimonial-avatars {
-    position: absolute;
+    position: relative;
     inset: 0;
     pointer-events: none;
   }
@@ -1498,13 +1498,14 @@ img {
     border: 3px solid #fff;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   }
-
-  /* Ajuster les positions individuelles pour mobile */
-  .a1 { top: 10%; left: 10%; }    /* premier avatar plus bas */
-  .a2 { top: 35%; left: 5%; }
-  .a3 { bottom: 15%; left: 18%; }
-  .a4 { top: 25%; right: 6%; }
-  .a5 { bottom: 20%; right: 15%; }
+@media (max-width: 768px) {
+  /* Aligner tous les avatars en bas, juste sous la carte */
+  .a1 { bottom: 5%; left: 5%; }
+  .a2 { bottom: 5%; left: 22%; }
+  .a3 { bottom: 5%; left: 39%; }
+  .a4 { bottom: 5%; right:  9%; }
+  .a5 { bottom: 5%; left: 73%; }
+}
 }
 
 /* AVATARS FIXES ET VISIBLES SUR TOUS LES ÉCRANS */
